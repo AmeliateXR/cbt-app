@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 import Nav from "react-bootstrap/Nav";
 
 class Header extends React.Component {
@@ -37,21 +34,41 @@ class Header extends React.Component {
 }
 
 class Content extends React.Component {
-  render() {
-    return (
-      <Container>
-        <div className="Content">
-          <h2>Hello World</h2>
-          <p>Some more details...</p>
-          <Bias name="All or Nothing"/>
-          <Bias name="Catastrophising"/>
-          <Bias name="Imperatives"/>
-          <Bias name="Labelling"/>
-          <Next/>
-        </div>
-      </Container>
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+    };
+  }
 
-    );
+  render() {
+    if (this.state.count == 0) {
+      return (
+        <Container>
+          <div className="Content">
+            <h2>Hello World</h2>
+            <p>Some more details...</p>
+            <p>State {this.state.count}</p>
+            <Bias name="All or Nothing"/>
+            <Bias name="Catastrophising"/>
+            <Button variant="primary" size="lg" onClick={() => this.setState({count: this.state.count += 1})}>Next...</Button>
+          </div>
+        </Container>
+      )
+    } else {
+      return (
+        <Container>
+          <div className="Content">
+            <h2>Hello World</h2>
+            <p>Some more details...</p>
+            <p>State {this.state.count}</p>
+            <Bias name="Imperatives"/>
+            <Bias name="Labelling"/>
+            <Button variant="primary" size="lg" onClick={() => this.setState({count: this.state.count += 1})}>Next...</Button>
+          </div>
+        </Container>
+      );
+    }
   }
 }
 
@@ -61,14 +78,6 @@ function Bias(props) {
     <h2>{props.name}</h2>
     <p>Some information about this bias</p>
     </div>
-  )
-}
-
-function Next() {
-  return (
-    <button className="next-btn">
-    <p>next...</p>
-    </button>
   )
 }
 
