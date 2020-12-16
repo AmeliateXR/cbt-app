@@ -25,7 +25,7 @@ h1 {
 .Content {
   min-height: 90vh;
   text-align: center;
-  background-color: #ebebeb;
+  background-color: #EFFFFF;
 }
 
 .bias {
@@ -33,28 +33,13 @@ h1 {
   padding: 5px 10px 20px 10px;
   width: 25vw;
   display: block;
-  border-radius: 30px;
-  box-shadow:  15px 15px 40px #c8c8c8,
-             -15px -15px 40px #ffffff;
-  border: none;
+  border-radius: 20px;
+  border: 1px solid #FFFFFF50;
+  box-shadow:  10px 10px 20px #D1CDC750,
+             -10px -10px 20px #ffffff;
 }
 
 .bias:hover {
-  box-shadow: inset 20px 20px 20px #c8c8c8,
-            inset -20px -20px 20px #ffffff;
-}
-
-.next-btn {
-  background-color: inherit;
-  border-radius: 20px;
-  margin: 10px auto 50px auto;
-  min-width: 5vw;
-  border: none;
-  box-shadow:  15px 15px 30px #c8c8c8,
-             -15px -15px 30px #ffffff;
-}
-
-.next-btn:hover {
-  box-shadow: inset 5px 5px 5px #c8c8c8,
-            inset -5px -5px 5px #ffffff;
+  box-shadow: inset 10px 10px 20px #D1CDC7,
+            inset -10px -10px 20px #ffffff;
 }
