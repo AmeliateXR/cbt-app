@@ -1,10 +1,5 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 10vmin;
-  pointer-events: none;
+  /* background-color: #33D4BC; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,19 +8,24 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+/* .App-header {
   min-height: 10vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+h1 {
+  font-size: 18px;
+  color: #33D4BC;
 }
 
-.App-link {
-  color: #61dafb;
+.Content {
+  min-height: 90vh;
+  text-align: center;
+  background-color: #ebebeb;
 }
 
 .bias {
@@ -34,41 +34,27 @@
   width: 25vw;
   display: block;
   border-radius: 30px;
-  background: #94e3fe;
-  box-shadow:  15px 15px 40px #7ec1d8,
-             -15px -15px 40px #aaffff;
+  box-shadow:  15px 15px 40px #c8c8c8,
+             -15px -15px 40px #ffffff;
   border: none;
 }
 
 .bias:hover {
-  box-shadow: inset 20px 20px 20px #7ec1d8,
-            inset -20px -20px 20px #aaffff;
-}
-
-.Content {
-  background: #94e3fe;
-  min-height: 90vh
+  box-shadow: inset 20px 20px 20px #c8c8c8,
+            inset -20px -20px 20px #ffffff;
 }
 
 .next-btn {
+  background-color: inherit;
   border-radius: 20px;
   margin: 10px auto 50px auto;
+  min-width: 5vw;
   border: none;
-  background: #94e3fe;
-  box-shadow:  15px 15px 30px #7ec1d8,
-             -15px -15px 30px #aaffff;
+  box-shadow:  15px 15px 30px #c8c8c8,
+             -15px -15px 30px #ffffff;
 }
 
 .next-btn:hover {
-  box-shadow: inset 5px 5px 5px #7ec1d8,
-            inset -5px -5px 5px #aaffff;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  box-shadow: inset 5px 5px 5px #c8c8c8,
+            inset -5px -5px 5px #ffffff;
 }
