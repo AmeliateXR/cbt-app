@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overscroll-behavior-y: contain;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  font-family: Raleway, sans-serif;
+  position: fixed;
+  overflow: hidden;
+}
+
+#root {
+  background: #33D4BC;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png")
+      39 39,
+    auto;
+}
+
+#root > div > div {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root > div > div > div {
+  padding: 5px;
+  background-color: white;
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 300px;
+  max-width: 300px;
+  height: 550px;
+  max-height: 580px;
+  will-change: transform;
+  border-radius: 10px;
+  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+    0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
+
+img {
+  height: 100px;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button[aria-label="previous"],
+button[aria-label="next"] {
+  background: #33D4BC !important;
+  color: black !important;
+}
+
+button {
+  height: 80px;
+  width: 80px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button#no {
+  position: absolute;
+  display: inline;
+  left: 5px;
+  bottom: 5px;
+  border-radius: 20px;
+  border-top-right-radius: 60px;
+  background-color: #FFB4B4;
+  border: 4px solid #FF4444;
+  color: #FF4444;
+}
+
+button#yes {
+  position: absolute;
+  display: inline;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 20px;
+  border-top-left-radius: 60px;
+  background-color: #ADEEE4;
+  border: 4px solid #33D4BC;
+  color: #33D4BC;
+}
+
+h2 {
+  color: #33D4BC;
+  font-weight: bolder;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h7 {
+  color: #2B5E8D;
+  font-size: 0.5rem;
+  margin: 0px 5px 0px 5px;
+  display: inline-flex;
+}
+
+h8 {
+  color: #2B5E8D;
+  font-size: 0.8rem;
+  margin-right: 10px;
+  float: right;
+  display: inline;
+}
+
+h5 {
+  margin: 5px 5px 5px 5px;
+  color: darkgray;
+  font-size: 1.2em !important;
+  text-align: center;
+}
+
+.card > div > div {
+  height: 380px !important;
+}
+
+.card {
+  height: 540px !important;
+}
