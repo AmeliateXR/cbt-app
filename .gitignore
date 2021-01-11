@@ -58,8 +58,8 @@ yarn-debug.log*
 yarn-error.log*
 
 
-# Dependency directories
-node_modules/
+# Dependency directories, node_modules should not be ignored ONLY on gh-pages branch
+node_modules/  
 jspm_packages/
 
 # Optional npm cache directory
