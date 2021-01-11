@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cbt-app/static/css/main.a3d842ee.chunk.css",
+    "main.js": "/cbt-app/static/js/main.0811eff1.chunk.js",
+    "main.js.map": "/cbt-app/static/js/main.0811eff1.chunk.js.map",
+    "runtime-main.js": "/cbt-app/static/js/runtime-main.34f83dff.js",
+    "runtime-main.js.map": "/cbt-app/static/js/runtime-main.34f83dff.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/cbt-app/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.180b01dc.chunk.js": "/cbt-app/static/js/2.180b01dc.chunk.js",
+    "static/js/2.180b01dc.chunk.js.map": "/cbt-app/static/js/2.180b01dc.chunk.js.map",
+    "static/js/3.763e9245.chunk.js": "/cbt-app/static/js/3.763e9245.chunk.js",
+    "static/js/3.763e9245.chunk.js.map": "/cbt-app/static/js/3.763e9245.chunk.js.map",
+    "index.html": "/cbt-app/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/cbt-app/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.a3d842ee.chunk.css.map": "/cbt-app/static/css/main.a3d842ee.chunk.css.map",
+    "static/js/2.180b01dc.chunk.js.LICENSE.txt": "/cbt-app/static/js/2.180b01dc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.34f83dff.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.180b01dc.chunk.js",
+    "static/css/main.a3d842ee.chunk.css",
+    "static/js/main.0811eff1.chunk.js"
+  ]
+}
